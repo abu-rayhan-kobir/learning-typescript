@@ -18,20 +18,29 @@ type Rectangle = {
 type Circle = {
   radius: number;
 }
+
+type Square = {
+  length: number;
+}
  
-type Shape = Rectangle | Circle;
+type Shape = Rectangle | Circle | Square;
 
 function area (shape: Shape): number {
   if ("radius" in shape) {
     return (Math.PI * Math.pow(shape.radius, 2));
+  } else if ("length" in shape) {
+    return Math.pow (2, shape.length);
   } else {
-    return (shape.height * shape.width);
+    return shape.height * shape.width;
   }
 }
+const square: Square = {length: 20};
 const circle: Circle = {radius: 40};
 const rectangle: Rectangle = {height: 10, width: 20};
 const areaOfCircle: number = area (circle);
 const areaOfRectangle: number = area (rectangle);
+const areaOfSquare: number = area (square);
 
+console.log (areaOfSquare);
 console.log (areaOfCircle);
 console.log (areaOfRectangle);
