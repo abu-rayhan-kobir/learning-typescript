@@ -48,7 +48,7 @@ console.log (sentence);
 
 // --------------BigInt--------------------
 // Represents whole numbers larger than 2^53 - 1
-const bigNumber: BigInt = BigInt (9007199254740991);
+const bigNumber: bigint  = 9007199254740991n;
 console.log (bigNumber);
 
 // -------------Symbol---------------------
