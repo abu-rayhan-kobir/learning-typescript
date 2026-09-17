@@ -26,3 +26,15 @@ const players: Player [] = [
 type OrderItem = readonly [number, number];
 const item: OrderItem = [7, 24];
 console.log (item);
+
+type DivisionValue = readonly [number, number];
+function divide (number1: number, number2: number): DivisionValue {
+  if (number2 === 0) {
+    throw new Error ("Divisiable by zero is not possible!");
+  } else {
+    return [Math.floor((number1 / number2)), number1 % number2];
+  }
+}
+
+const result: DivisionValue = divide (9, 7);
+console.log (result);
