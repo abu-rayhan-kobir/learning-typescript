@@ -1,4 +1,3 @@
-"use strict";
 /*
 
 --------------Typescript primitives types-----------------
@@ -40,7 +39,7 @@ console.log(username);
 console.log(sentence);
 // --------------BigInt--------------------
 // Represents whole numbers larger than 2^53 - 1
-const bigNumber = BigInt(9007199254740991);
+const bigNumber = 9007199254740991n;
 console.log(bigNumber);
 // -------------Symbol---------------------
 // Symbol হলো এমন একটি unique value, যেটা প্রতিবার তৈরি করলে আলাদা হয়।
@@ -57,3 +56,4 @@ let number;
 console.log(number); // output will be undefined
 let user = null;
 console.log(user);
+export {};

@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "module": "ESNext",
+    "moduleDetection": "force",
     "noEmitOnError": true,
     "outDir": "dist",
     "rootDir": "."
