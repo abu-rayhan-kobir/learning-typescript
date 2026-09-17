@@ -2,5 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "noEmitOnError": true,
+    "outDir": "dist",
+    "rootDir": "."
   }
 }
