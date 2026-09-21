@@ -1,10 +1,12 @@
-class Account {
-  constructor (public readonly id: number, public name: string, protected balance: number) {
-    this.id = id;
+class Person {
+  private readonly name: string;
+  public constructor (name: string) {
     this.name = name;
-    this.balance;
+  }
+  public getName (): string {
+    return this.name;
   }
 }
 
-const account1 = new Account (202, "Abu Rayhan Koibir", 200000);
-console.log (account1);
+const person = new Person ("Abu Rayhan Kobir");
+console.log (person);
