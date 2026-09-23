@@ -1,4 +1,5 @@
 /*
+
 Omit হলো TypeScript-এর একটি built-in Utility Type, যেটা কোনো existing type থেকে নির্দিষ্ট property বাদ দিয়ে নতুন type তৈরি করে।
 Syntax:
 
