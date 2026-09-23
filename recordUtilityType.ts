@@ -42,3 +42,18 @@ console.log (statusMessages[200]);
 console.log (statusMessages[401]);
 console.log (statusMessages[400]);
 console.log (statusMessages[500]);
+
+type Category = "laptop" | "phone" | "tablet" | "headphone";
+
+type Stock = Record <Category, number>;
+
+const stock: Stock = {
+  laptop: 21,
+  phone: 20,
+  tablet: 40,
+  headphone: 31,
+};
+
+const totalQuantity = Object.values(stock).reduce ((sum, number) => sum + number);
+
+console.log (totalQuantity);
